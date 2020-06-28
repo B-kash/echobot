@@ -1,9 +1,10 @@
-import {Message} from "../model/Message";
+import {Message, UserType} from "../model/Message";
 
 export class MessageService {
 
     public readAndRespondMessage(message: Message): Message {
-        message.seenTime = new Date();
+        message.sentTime = new Date();
+        message.sentBy = UserType.Bot;
         // Later on this message can be saved to the DB if need be
         return message;
     }
@@ -13,6 +14,7 @@ export class MessageService {
             text: 'Welcome to echo bot',
             sentTime: new Date(),
             seenTime: null,
+            sentBy: UserType.Bot
         };
     }
 }
