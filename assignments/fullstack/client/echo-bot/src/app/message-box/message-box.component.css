@@ -1,0 +1,29 @@
+
+.message-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: var(--border);
+  background: #eee;
+}
+.message-input-area * {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.message-input {
+  flex: 1;
+  background: #ddd;
+}
+
+.message-send-btn {
+  margin-left: 10px;
+  background: rgb(0, 196, 65);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+}
+.message-send-btn:hover {
+  background: rgb(0, 180, 50);
+}
