@@ -15,6 +15,6 @@
     }
   },
   "include": [
-    "Server/src/**/*"
+    "server/src/**/*"
   ]
 }

@@ -1,4 +1,4 @@
-import {Server} from "./Server/src/server";
+import {Server} from "./server";
 import {config} from "dotenv";
 
 async function main(): Promise<void> {

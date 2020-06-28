@@ -25,7 +25,7 @@ export class Server {
         });
     }
     private manageRoutes(): void {
-        this.app.use('/welcome', new MessageRoute().router);
+        this.app.use('/message', new MessageRoute().router);
     }
 
 }
