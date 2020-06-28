@@ -11,6 +11,7 @@ export class MessageRoute{
     }
 
     private routes(): void {
-        this.router.get('/message', this.messageController.echoMessage);
+        this.router.post('/echo', this.messageController.echoMessage);
+        this.router.get('/', this.messageController.welcomeMessage);
     }
 }
