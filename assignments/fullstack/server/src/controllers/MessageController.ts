@@ -4,13 +4,15 @@ import {MessageService} from "../services/MessageService";
 
 export class MessageController {
     messageService: MessageService = new MessageService();
+    welcomeMessage = async (request: Request, response: Response): Promise<void> => {
 
-    constructor() {
-    }
+        response.status(200)
+            .send(this.messageService.welcomeMessage());
+    };
 
-    public async echoMessage(request: Request, response: Response): Promise<void> {
+    echoMessage = async (request: Request, response: Response): Promise<void> => {
         const message: Message = request.body;
         response.status(200)
             .send(this.messageService.readAndRespondMessage(message));
-    }
+    };
 }
