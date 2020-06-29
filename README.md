@@ -22,6 +22,9 @@ The backend is a nodejs RESTFUL server that receives the message and returns wha
 The application will be run on port `8080`. To verify that the application started, a message will be logged on the console. 
 The port can be changed from `.env` file located at  `assignments/fullstack/server/echo-bot-service`.
 
+### FrontEnd
+The frontEnd is written in angular. The css is design is referred from [here](https://codepen.io/sajadhsm/pen/odaBdd).
+
 #### How to run standalone frontend 
 
 - Make sure you have angular cli installed `npm install -g @angular/cli`.
