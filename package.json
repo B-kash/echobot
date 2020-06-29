@@ -1,0 +1,24 @@
+{
+  "name": "echo-bot",
+  "version": "1.0.0",
+  "description": "This project consists of a node backend and an angular front end echo bot.An example EchoBot is set up here: https://chatbox.staging.chatlayer.ai/5ef5aabd99110809d2374df3?language=en",
+  "main": "index.js",
+  "scripts": {
+    "prepare-client": "cd assignments/fullstack/client/echo-bot/ && npm install",
+    "prepare-server": "cd assignments/fullstack/server/echo-bot-service/ && npm install",
+    "start-client": "cd assignments/fullstack/client/echo-bot/ && npm run start",
+    "start-server": "cd assignments/fullstack/server/echo-bot-service/ && npm run start",
+    "prepare-all": "npm run prepare-client & npm run prepare-server",
+    "start-all": "npm run start-client & npm run start-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-kash/echobot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/B-kash/echobot/issues"
+  },
+  "homepage": "https://github.com/B-kash/echobot#readme"
+}
